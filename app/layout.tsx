@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const RootLayout = ({
+const RootLayout = ({
 	children,
 }: {
 	children: React.ReactNode
@@ -21,3 +21,5 @@ export const RootLayout = ({
 		</html>
 	)
 }
+
+export default RootLayout
