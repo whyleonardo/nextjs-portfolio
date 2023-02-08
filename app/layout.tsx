@@ -1,6 +1,8 @@
 import './styles/globals.css'
 import { Inter } from '@next/font/google'
-
+import Header from 'components/UI/Header'
+import Providers from './providers'
+import Toggle from 'components/ToggleTheme'
 const inter = Inter({ subsets: ['latin'] })
 
 const RootLayout = ({
@@ -15,9 +17,13 @@ const RootLayout = ({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 			<head />
-			<body className={`bg-slate-900 text-white ${inter.className}`}>
-				{children}
+			<body className={`dark:bg-black light:bg-white light:text-black dark:text-white ${inter.className}`}>
+				<Providers>
+					<Header />
+					{children}
+				</Providers>
 			</body>
+
 		</html>
 	)
 }

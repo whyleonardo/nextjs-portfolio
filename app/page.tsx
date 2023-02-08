@@ -1,4 +1,5 @@
 import { createClient } from "next-sanity"
+import { Project } from "utils/@types/project"
 
 const client = createClient({
 	projectId: "gvtrjxtp",
@@ -7,15 +8,6 @@ const client = createClient({
 	useCdn: false
 })
 
-type Project = {
-	_id: string
-	cover: { _type: string, asset: [Object] }
-	dateWasCreated: string
-	github: string
-	isCompleted: boolean
-	link: string
-	title: string
-}
 
 const Home = async () => {
 	const projects: Project[] = await client.fetch(`*[_type == "project"]`)
@@ -28,9 +20,10 @@ const Home = async () => {
 	})
 
 	return (
-		<div>
-			{projectsSortedByMostRecent.map((project) => <p key={project._id}>{project.title}</p>)}
-		</div>
+		// <div>
+		// 	{projectsSortedByMostRecent.map((project) => <p key={project._id}>{project.title}</p>)}
+		// </div>
+		<p> a</p>
 	)
 }
 
