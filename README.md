@@ -20,20 +20,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository to your local machine
 
-git clone https://github.com/<YOUR_GITHUB_USERNAME>/portfolio-nextjs.git
+```git clone https://github.com/<YOUR_GITHUB_USERNAME>/portfolio-nextjs.git```
 
 2. Navigate to the project directory
 
-cd portfolio-nextjs
+```cd portfolio-nextjs```
 
 3. Install the dependencies
 
-npm install
+```npm install```
 
 4. Start the development server
 
-npm run dev
-
+```npm run dev```
 
 ## Deployment
 
