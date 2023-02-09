@@ -5,6 +5,7 @@
     "sort-imports": "error",
     "semi": "off",
     "quotes": ["error", "single"],
-    "no-duplicate-imports": "error"
+    "no-duplicate-imports": "error",
+		 "@next/next/no-html-link-for-pages": "off"
   }
 }
