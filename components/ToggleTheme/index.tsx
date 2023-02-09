@@ -1,16 +1,16 @@
 'use client'
 
-import { useTheme } from "next-themes"
-import { SunIcon, MoonIcon } from '@heroicons/react/24/solid'
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
+import { useTheme } from 'next-themes'
 
 const ToggleTheme = () => {
 	const { theme, setTheme } = useTheme()
 
 	const handleChangeTheme = () => {
-		if (theme === "light") {
-			return setTheme("dark")
+		if (theme === 'light') {
+			return setTheme('dark')
 		}
-		return setTheme("light")
+		return setTheme('light')
 	}
 
 	return (

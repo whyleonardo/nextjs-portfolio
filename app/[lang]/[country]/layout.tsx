@@ -1,6 +1,6 @@
 import './styles/globals.css'
-import { Inter } from '@next/font/google'
 import Header from 'components/UI/Header'
+import { Inter } from '@next/font/google'
 import Providers from './providers'
 import Toggle from 'components/ToggleTheme'
 const inter = Inter({ subsets: ['latin'] })
