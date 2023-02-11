@@ -1,34 +1,29 @@
 'use client'
-
+import { BR, US } from 'country-flag-icons/react/3x2'
 import Link from 'next/link'
+import { clsx } from 'clsx'
+import { usePathname } from 'next/navigation'
 
+const TranslateButton = () => {
+	const pathname = usePathname()
 
-const locales = [
-	{
-		lang: 'pt',
-		country: 'br',
-		icon: 'brasil'
-	},
-	{
-		lang: 'en',
-		country: 'us',
-		icon: 'eua'
-	}
-]
-
-const TranslateButton = ({ params }: { params: { lang: string, country: string } }) => {
 	return (
-		<>
-			<div className="space-x-5 space-y-5">
-				{locales.map(locale =>
-					<Link key={locale.country} href='pt/br' className="border border-green-600">Brasil</Link>
-				)
+		<div className='flex space-x-2'>
+			<Link href='/pt/br'>
+				<BR
+					title="Brazil"
+					className={clsx('w-14 h-14 hover:grayscale-0 transition duration-300', pathname != '/' && 'grayscale')}
+				/>
+			</Link>
 
-				}
+			<Link href='/en/us'>
+				<US
+					title="United States"
+					className={clsx('w-14 h-14 hover:grayscale-0 transition duration-300', pathname != '/en/us' && 'grayscale')}
+				/>
+			</Link>
 
-				<Link href='en/us' className="border border-red-600">EUA</Link>
-			</div>
-		</>
+		</div>
 	)
 }
 

@@ -2,11 +2,11 @@ import './styles/globals.css'
 import Header from 'components/UI/Header'
 import { Inter } from '@next/font/google'
 import Providers from './providers'
-import Toggle from 'components/ToggleTheme'
+
 const inter = Inter({ subsets: ['latin'] })
 
 const RootLayout = ({
-	children,
+	children
 }: {
 	children: React.ReactNode
 }) => {

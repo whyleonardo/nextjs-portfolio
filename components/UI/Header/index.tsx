@@ -1,9 +1,11 @@
 import Toggle from 'components/ToggleTheme'
+import TranslateButton from 'components/TranslateButtons'
 
 const Header = () => {
 	return (
-		<header className="bg-transparent w-full h-20">
+		<header className="flex items-center bg-transparent w-full h-20">
 			<Toggle />
+			<TranslateButton />
 		</header>
 	)
 }
