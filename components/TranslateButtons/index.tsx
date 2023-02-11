@@ -13,7 +13,7 @@ const TranslateButton = () => {
 			<Link href='/'>
 				<BR
 					title="Brazil"
-					className={clsx('w-14 h-14 hover:grayscale-0 transition duration-300', pathname != '/' && 'grayscale')}
+					className={clsx('w-14 h-14 hover:grayscale-0 transition duration-300', pathname == '/en/us' && 'grayscale')}
 				/>
 			</Link>
 
