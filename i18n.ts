@@ -1,6 +1,6 @@
 
 export const defaultLocale = 'pt-BR'
-export const locales = ['pt-BR', 'en-US']
+export const locales = ['pt-BR', 'en-US', 'es-ES']
 export type ValidLocale = typeof locales[number]
 
 type PathnameLocale = {
@@ -35,7 +35,9 @@ const dictionaries: Record<ValidLocale, any> = {
   'pt-BR': () =>
     import('dictionaries/pt-BR.json').then((module) => module.default),
   'en-US': () =>
-    import('dictionaries/en-US.json').then((module) => module.default)
+		import('dictionaries/en-US.json').then((module) => module.default),
+	'es-ES': () =>
+    import('dictionaries/es-ES.json').then((module) => module.default)
 } as const
 
 export const getTranslator = async (locale: ValidLocale) => {

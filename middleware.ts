@@ -1,9 +1,6 @@
-import { NextRequest, NextResponse } from "next/server"
-import langParser from "accept-language-parser"
-import { defaultLocale, getLocalePartsFrom, locales } from "i18n"
-
-
-
+import { NextRequest, NextResponse } from 'next/server'
+import { defaultLocale, getLocalePartsFrom, locales } from 'i18n'
+import langParser from 'accept-language-parser'
 
 const findBestMatchingLocale = (acceptLangHeader: string) => {
   // parse the locales acceptable in the header, and sort them by priority (q)
@@ -56,7 +53,7 @@ export function middleware(request: NextRequest) {
       new URL(
         pathname.replace(
           `/${defaultLocaleParts.lang}/${defaultLocaleParts.country}`,
-          pathname.startsWith("/") ? "/" : ""
+          pathname.startsWith('/') ? '/' : ''
         ),
         request.url
       )
@@ -72,7 +69,7 @@ export function middleware(request: NextRequest) {
     // rewrite it so next.js will render `/` as if it was `/en/us`
 
     const matchedLocale = findBestMatchingLocale(
-      request.headers.get("Accept-Language") || defaultLocale
+      request.headers.get('Accept-Language') || defaultLocale
     )
 
     if (matchedLocale !== defaultLocale) {
@@ -96,5 +93,5 @@ export function middleware(request: NextRequest) {
 
 export const config = {
 // do not localize next.js paths
-  matcher: ["/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)",],
+  matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)',],
 }
