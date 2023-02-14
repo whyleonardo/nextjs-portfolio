@@ -1,5 +1,5 @@
 import './styles/globals.css'
-import Header from 'components/UI/Header'
+import Header from './components/UI/Header'
 import Providers from './providers'
 import { inter } from './styles/fonts'
 
@@ -20,6 +20,7 @@ const RootLayout = ({
 			<head />
 			<body className={`dark:bg-black light:bg-white light:text-black dark:text-white ${inter.className}`}>
 				<Providers>
+					{/* @ts-expect-error Async Server Component */}
 					<Header params={params} />
 					{children}
 				</Providers>

@@ -7,6 +7,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
 		<ThemeProvider>
 			{children}
 		</ThemeProvider>
+
 	)
 }
 
