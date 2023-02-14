@@ -6,7 +6,11 @@ module.exports = {
 		"./components/**/*.{html,jsx,tsx}"
 	],
   theme: {
-
+ 		extend: {
+      fontFamily: {
+        sans: ['var(--font-archerus)']
+      },
+    },
   },
   plugins: [],
 }
