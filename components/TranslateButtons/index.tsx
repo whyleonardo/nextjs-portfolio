@@ -9,7 +9,6 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 const TranslateButton = () => {
-	const [order, setOrder] = useState('asc')
 	const pathname = usePathname()
 	const { locales } = getLocalesInfo()
 
@@ -18,7 +17,7 @@ const TranslateButton = () => {
 			{locales.map(({ country, lang, isDefault }) =>
 				<Link key={country} href={`/${lang}/${country}`}>
 					<ReactCountryFlag
-						style={{ width: '3rem', height: '3rem' }}
+						style={{ width: '2.5rem', height: '2.5rem' }}
 						countryCode={country}
 						svg
 						className={
