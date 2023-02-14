@@ -17,7 +17,7 @@ const ToggleTheme = () => {
 		<button
 			onClick={handleChangeTheme}
 			type="button"
-			className="opacity-75 p-6 text-xl light:text-black dark:text-white"
+			className="opacity-75 p-6 text-xl grayscale hover:grayscale-0"
 		>
 			{theme === 'light'
 				?

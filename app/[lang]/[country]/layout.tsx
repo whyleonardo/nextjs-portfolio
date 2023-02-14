@@ -1,9 +1,7 @@
 import './styles/globals.css'
+import { archerus, inter } from './styles/fonts'
 import Header from 'components/UI/Header'
-import { Inter } from '@next/font/google'
 import Providers from './providers'
-
-const inter = Inter({ subsets: ['latin'] })
 
 const RootLayout = ({
 	children

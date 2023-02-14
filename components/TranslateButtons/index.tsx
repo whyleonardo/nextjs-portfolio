@@ -4,9 +4,7 @@ import Link from 'next/link'
 import ReactCountryFlag from 'react-country-flag'
 import { clsx } from 'clsx'
 import { getLocalesInfo } from 'utils/getLocalesInfo'
-
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
 
 const TranslateButton = () => {
 	const pathname = usePathname()
