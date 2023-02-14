@@ -1,7 +1,7 @@
 import { ValidLocale, getLocalePartsFrom, getTranslator, locales } from 'i18n'
 import { ParamsProps } from 'utils/@types/params'
-import ToggleTheme from 'components/ToggleTheme'
-import TranslateButton from 'components/TranslateButtons'
+import ToggleTheme from '../../ToggleTheme'
+import TranslateButton from '../../TranslateButtons'
 
 const sections = [
 	{
