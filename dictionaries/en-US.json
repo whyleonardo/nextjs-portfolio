@@ -2,5 +2,11 @@
 	"welcome": {
 		"helloWorld": "Hello World!",
 		"happyYear": "Happy {{ year }}!"
+	},
+	"navLink": {
+		"home": "Home",
+		"about": "About",
+		"contact": "Contact",
+		"projects": "Projects"
 	}
 }

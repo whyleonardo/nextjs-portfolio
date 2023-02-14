@@ -2,5 +2,11 @@
 	"welcome": {
 		"helloWorld": "¡Hola mundo!",
 		"happyYear": "¡Feliz {{ year }}!"
+	},
+	"navLink": {
+		"home": "Initio",
+		"about": "Sobre Mi",
+		"contact": "Contatio",
+		"projects": "Proyetos"
 	}
 }
