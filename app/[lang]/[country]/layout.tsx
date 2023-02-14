@@ -1,15 +1,18 @@
 import './styles/globals.css'
-import { archerus, inter } from './styles/fonts'
 import Header from 'components/UI/Header'
 import Providers from './providers'
+import { inter } from './styles/fonts'
 
 const RootLayout = ({
+	params,
 	children
 }: {
-	children: React.ReactNode
+	children: React.ReactNode,
+	params: { country: string, lang: string }
 }) => {
+
 	return (
-		<html>
+		<html className='scroll-smooth'>
 			{/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
@@ -17,7 +20,7 @@ const RootLayout = ({
 			<head />
 			<body className={`dark:bg-black light:bg-white light:text-black dark:text-white ${inter.className}`}>
 				<Providers>
-					<Header />
+					<Header params={params} />
 					{children}
 				</Providers>
 			</body>

@@ -21,9 +21,9 @@ const ToggleTheme = () => {
 		>
 			{theme === 'light'
 				?
-				<MoonIcon className="h-6 w-6 transition duration-300 ease-in-out  hover:text-yellow-300" />
+				<MoonIcon className="h-6 w-6 transition duration-300 ease-in-out  hover:text-yellow-600" />
 				:
-				<SunIcon className="h-6 w-6 transition duration-300 ease-in-out hover:text-yellow-300" />
+				<SunIcon className="h-6 w-6 transition duration-300 ease-in-out hover:text-yellow-600" />
 			}
 		</button>
 	)
