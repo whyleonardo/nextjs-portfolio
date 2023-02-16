@@ -18,9 +18,8 @@ const RootLayout = ({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 			<head />
-			<body className={`dark:bg-black light:bg-white light:text-black dark:text-white ${inter.className}`}>
+			<body className={`dark:bg-black/90 bg-white text-black dark:text-white ${inter.className}`}>
 				<Providers>
-					{/* @ts-expect-error Async Server Component */}
 					<Header params={params} />
 					{children}
 				</Providers>
