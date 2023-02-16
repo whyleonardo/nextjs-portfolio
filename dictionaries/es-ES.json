@@ -4,9 +4,9 @@
 		"happyYear": "¡Feliz {{ year }}!"
 	},
 	"navLink": {
-		"home": "Initio",
+		"home": "Inicio",
 		"about": "Sobre Mi",
-		"contact": "Contatio",
-		"projects": "Proyetos"
+		"contact": "Contacto",
+		"projects": "Proyectos"
 	}
 }
