@@ -8,18 +8,13 @@ const Home = async ({ params }: ParamsProps) => {
 	)
 
 	return (
-		<div className='flex flex-col justify-between border border-red-500 h-[150vh]'>
+		<div className='flex'>
 			<h1>{translate('welcome.helloWorld')}</h1>
 			<h2>
 				{translate('welcome.happyYear', {
 					year: new Date().getFullYear()
 				})}
 			</h2>
-
-			<div id='projects' className=''>
-				asjdiqhuwdqw
-
-			</div>
 		</div>
 	)
 }

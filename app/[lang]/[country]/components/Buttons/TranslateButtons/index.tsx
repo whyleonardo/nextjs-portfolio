@@ -15,7 +15,7 @@ const TranslateButton = () => {
 			{locales.map(({ country, lang, isDefault }) =>
 				<Link key={country} href={`/${lang}/${country}`}>
 					<ReactCountryFlag
-						style={{ width: '2.5rem', height: '2.5rem' }}
+						style={{ width: '2rem', height: '2rem' }}
 						countryCode={country}
 						svg
 						className={

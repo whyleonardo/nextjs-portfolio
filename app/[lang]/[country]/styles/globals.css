@@ -4,4 +4,5 @@
 
 * {
     -webkit-tap-highlight-color: transparent;
+		-webkit-font-smoothing: antialiased;
 }
