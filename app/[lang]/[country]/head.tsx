@@ -1,4 +1,4 @@
-const Head = () => {
+export default function () {
 	return (
 		<>
 			<title>Create Next App</title>
@@ -8,5 +8,3 @@ const Head = () => {
 		</>
 	)
 }
-
-export default Head

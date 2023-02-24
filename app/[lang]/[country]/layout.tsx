@@ -1,15 +1,15 @@
 import './styles/globals.css'
 import Header from './components/UI/Header'
-import Providers from './providers'
+import { Providers } from './providers'
 import { inter } from './styles/fonts'
 
-const RootLayout = ({
+export default function RootLayout({
 	params,
 	children
 }: {
 	children: React.ReactNode,
 	params: { country: string, lang: string }
-}) => {
+}) {
 
 	return (
 		<html className='scroll-smooth'>
@@ -28,5 +28,3 @@ const RootLayout = ({
 		</html>
 	)
 }
-
-export default RootLayout
