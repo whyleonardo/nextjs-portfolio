@@ -1,5 +1,12 @@
 const Home = () => {
-	return <p>Olá</p>
+	return (
+		<section
+			id="home"
+			className=""
+		>
+			Home
+		</section>
+	)
 }
 
 export default Home

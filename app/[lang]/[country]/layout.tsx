@@ -21,7 +21,9 @@ export default function RootLayout({
 			<body className={`dark:bg-black/90 bg-white text-black dark:text-white ${inter.className}`}>
 				<Providers>
 					<Header params={params} />
-					{children}
+					<div className='px-4 border border-red-500'>
+						{children}
+					</div>
 				</Providers>
 			</body>
 
