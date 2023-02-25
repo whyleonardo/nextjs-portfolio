@@ -1,11 +1,6 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"],
-  "plugins": [],
-  "rules": {
-    "sort-imports": "error",
-    "semi": "off",
-    "quotes": ["error", "single"],
-    "no-duplicate-imports": "error",
-		 "@next/next/no-html-link-for-pages": "off"
-  }
+  "extends": [
+    "next/core-web-vitals",
+    "@rocketseat/eslint-config/react"
+]
 }
