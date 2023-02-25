@@ -22,7 +22,12 @@ const NavMenu = ({ children }: { children: any }) => {
 			</div>
 
 			<Disclosure>
-				<Disclosure.Button title={'Open Menu'} onClick={() => setIsOpen(state => !state)} className='md:hidden fixed right-4'>
+				<Disclosure.Button
+					title={'Open Menu'}
+					// @ts-ignore
+					onClick={() => setIsOpen(state => !state)}
+					className='md:hidden fixed right-4'
+				>
 					<Bars3Icon className='h-8 w-8' />
 				</Disclosure.Button>
 
@@ -48,6 +53,7 @@ const NavMenu = ({ children }: { children: any }) => {
 
 									<Disclosure.Button
 										title={'Close Menu'}
+										// @ts-ignore
 										onClick={() => setIsOpen(state => !state)}
 										className='md:hidden fixed right-4'
 									>
