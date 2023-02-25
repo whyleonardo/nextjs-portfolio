@@ -11,25 +11,22 @@ const TranslateButton = () => {
 	const { locales } = getLocalesInfo()
 
 	return (
-		<div className='flex space-x-2'>
-			{locales.map(({ country, lang, isDefault }) =>
+		<div className="flex space-x-2">
+			{locales.map(({ country, lang, isDefault }) => (
 				<Link key={country} href={`/${lang}/${country}`}>
 					<ReactCountryFlag
 						style={{ width: '2rem', height: '2rem' }}
 						countryCode={country}
 						svg
-						className={
-							clsx(
-								[
-									'hover:grayscale-0 transition duration-300 grayscale',
-									(isDefault && pathname == '/')
-										? 'grayscale-0'
-										: pathname?.includes(country) && 'grayscale-0'
-								]
-							)}
+						className={clsx([
+							'hover:grayscale-0 transition duration-300 grayscale',
+							isDefault && pathname === '/'
+								? 'grayscale-0'
+								: pathname?.includes(country) && 'grayscale-0',
+						])}
 					/>
 				</Link>
-			)}
+			))}
 		</div>
 	)
 }

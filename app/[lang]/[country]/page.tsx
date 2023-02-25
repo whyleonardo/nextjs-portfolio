@@ -5,17 +5,16 @@ import { ParamsProps } from 'utils/@types/params'
 
 export const metadata: Metadata = {
 	title: 'Christian | Portfólio',
-	description: 'Welcome to my Website'
+	description: 'Welcome to my Website',
 }
 
 export default async function Home({ params }: ParamsProps) {
-
 	const translate = await getTranslator(
-		`${params.lang}-${params.country.toUpperCase()}` as ValidLocale
+		`${params.lang}-${params.country.toUpperCase()}` as ValidLocale,
 	)
 
 	return (
-		<div className='flex'>
+		<div className="flex">
 			{/* <h1>{translate('welcome.helloWorld')}</h1>
 			<h2>
 				{translate('welcome.happyYear', {
