@@ -19,9 +19,6 @@ module.exports = {
 			},
 			animation: {
 				'profile': 'img-profile 8s ease-in-out infinite 1s',
-			},
-			boxShadow: {
-				profileShadow: 'inset 0 0 0 9px rgb(255 255 255 / 30%)'
 			}
 		},
 	},
