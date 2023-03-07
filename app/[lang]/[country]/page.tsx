@@ -2,6 +2,8 @@ import { ValidLocale, getLocalePartsFrom, getTranslator, locales } from 'i18n'
 import HomeSection from '@/components/UI/Sections/Home'
 import type { Metadata } from 'next/types'
 import { ParamsProps } from 'utils/@types/params'
+import { getProjects } from 'utils/getProjects'
+import { Project } from 'utils/@types/project'
 
 export const metadata: Metadata = {
 	title: 'Christian | Portfólio',
@@ -12,6 +14,10 @@ export default async function Home({ params }: ParamsProps) {
 	const translate = await getTranslator(
 		`${params.lang}-${params.country.toUpperCase()}` as ValidLocale,
 	)
+
+	const projects: Project = await getProjects()
+
+	console.log(projects)
 
 	return (
 		<div className="flex">
