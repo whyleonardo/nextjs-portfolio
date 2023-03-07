@@ -1,6 +1,6 @@
 import { ValidLocale, getLocalePartsFrom, getTranslator, locales } from 'i18n'
 import HomeSection from '@/components/UI/Sections/Home'
-import type { Metadata } from 'next'
+import type { Metadata } from 'next/types'
 import { ParamsProps } from 'utils/@types/params'
 
 export const metadata: Metadata = {
