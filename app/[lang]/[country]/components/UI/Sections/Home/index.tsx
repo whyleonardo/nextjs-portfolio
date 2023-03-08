@@ -9,7 +9,8 @@ const HomeSection = () => {
 				src={img}
 				width="300"
 				height="300"
-				className="bg-red-500 animate-profile shadow-inner "
+				className="bg-red-500 animate-profile shadow-inner"
+				priority={true}
 			/>
 		</section>
 	)

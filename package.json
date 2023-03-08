@@ -12,6 +12,7 @@
 		"@headlessui/react": "^1.7.12",
 		"@heroicons/react": "^2.0.16",
 		"clsx": "^1.2.1",
+		"critters": "^0.0.16",
 		"eslint": "8.34.0",
 		"eslint-config-next": "13.2.1",
 		"next": "13.2.1",
