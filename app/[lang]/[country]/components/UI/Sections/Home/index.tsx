@@ -1,16 +1,21 @@
 import Image from 'next/image'
-import img from '@/assets/imgs/photo-1560250097-0b93528c311a.webp'
+import { sanityImageBuilder } from 'services/sanityClient'
+import { PersonalInfo } from 'utils/@types/personalInfo'
 
-const HomeSection = () => {
+interface HomeSectionProps {
+	personalInfo: PersonalInfo
+}
+
+const HomeSection = ({ personalInfo }: HomeSectionProps) => {
+	const image = sanityImageBuilder.image(personalInfo.profilePhoto).url()
 	return (
 		<section id="home" className="">
 			<Image
 				alt="profile"
-				src={img}
+				src={image}
 				width="300"
 				height="300"
 				className="bg-red-500 animate-profile shadow-inner"
-				priority={true}
 			/>
 		</section>
 	)
