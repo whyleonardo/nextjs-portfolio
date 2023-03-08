@@ -1,7 +1,8 @@
 {
-	"welcome": {
-		"helloWorld": "Olá, Mundo!",
-		"happyYear": "Feliz {{ year }}!"
+	"home": {
+		"role": "Desenvolvedor Front-End",
+		"description": "Sou um criativo desenvolvedor de Belo Horizonte, Brasil. Sou muito apaixonado e dedicado pelo meu trabalho.",
+		"sayHello": "Diga olá"
 	},
 	"navLink": {
 		"home": "Início",

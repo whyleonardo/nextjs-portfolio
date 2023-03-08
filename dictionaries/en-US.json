@@ -1,7 +1,8 @@
 {
-	"welcome": {
-		"helloWorld": "Hello World!",
-		"happyYear": "Happy {{ year }}!"
+	"home": {
+		"role": "Front-End Developer",
+		"description": "I'm creative developer based in Belo Horizonte, Brazil. I'm very passionate and dedicated to my work.",
+		"sayHello": "Say Hello"
 	},
 	"navLink": {
 		"home": "Home",

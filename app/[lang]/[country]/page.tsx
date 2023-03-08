@@ -19,16 +19,10 @@ export default async function Home({ params }: ParamsProps) {
 	// const projects = await getProjects()
 
 	return (
-		<div className="flex">
-			<h1>{translate('welcome.helloWorld')}</h1>
-			<h2>
-				{translate('welcome.happyYear', {
-					year: new Date().getFullYear(),
-				})}
-			</h2>
+		<div className="flex flex-col justify-center container">
 
 			{/* @ts-ignore */}
-			<HomeSection personalInfo={personalInfo} />
+			<HomeSection personalInfo={personalInfo} translate={translate} />
 		</div>
 	)
 }

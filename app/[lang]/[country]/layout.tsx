@@ -18,12 +18,10 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 			<head />
-			<body
-				className={`dark:bg-black/90 bg-white text-black dark:text-white ${inter.className}`}
-			>
+			<body className={`dark:bg-black/90 bg-white text-black dark:text-white ${inter.className}`}>
 				<Providers>
 					<Header params={params} />
-					<div className="px-4 border border-red-500">{children}</div>
+					<div className="px-4">{children}</div>
 				</Providers>
 			</body>
 		</html>
